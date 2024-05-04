@@ -6,7 +6,7 @@ body{
 }
 
 header{
-    height: 50px;
+    height: 30px;
 }
 article{
     color: white;
@@ -27,17 +27,18 @@ article{
 
 .nav{
     background-color: transparent;
-    padding: 5px;
+    padding: 4px;
     width: 100%;
+    height: 7%;
     position: fixed;
     top: 0%;
 }
 
 .nav .logo{
-    width: 50px;
+    width: 45px;
    border-radius: 100%;  
    margin-left: 20px;
-   margin-top: 18px;
+   margin-top: 0px;
 
 }
 
@@ -58,11 +59,8 @@ article{
 
 ul{
     margin-right: 20px;
+    margin-top: 0px;
 }
-
-
-
-
 
 .name{
     font-family: "Kalam", cursive;
@@ -151,17 +149,13 @@ ul{
     border: 0px solid transparent;
     padding: 50px 30px 50px 30px;
     width: 40%;  
-    border-radius: 10%;
-    
+    border-radius: 10%;    
     background-color: rgba(0, 0, 0, 0.5);
 }
 
 .inline-pjct .bullet{
-   
     text-align: left;
-    list-style-type: circle;
-   
-    
+    list-style-type: circle;  
 }
 
 .inline-pjct .pjct-title
@@ -174,11 +168,7 @@ ul{
     position: relative;
     top: 0px;
     bottom: 0px;
-    color: aquamarine;
-    
-   
-    
-    
+    color: aquamarine;   
 }
 
 ol li{
@@ -207,17 +197,13 @@ a img{
 
 b{
     font-family: "Orbitron", sans-serif;
-
     color: aquamarine;
 }
 
 .back-to-home{
-    font-family: "Orbitron", sans-serif;
-    text-decoration: none;
-    color: antiquewhite;
-    border: 1px solid gray;
-    padding: 2px 8px 2px 8px;
-    border-radius: 10px;
+    position: fixed;
+    bottom: 0px;
+    right: 0%;   
    
 }
 
@@ -236,3 +222,24 @@ div a:hover{
 .list a img:hover{
     filter: saturate(100%);
 }
+
+
+#myBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    cursor: pointer;
+}
+
+article button{
+    width: 45px;
+    height: 45px;
+    padding: 0;
+}
+
+.arrow-up{
+    width: 45px;
+    height: 45px;
+  }
