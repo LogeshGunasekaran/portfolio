@@ -22,24 +22,24 @@
                 <ul>
                     <li class="list">
                         <a target="_blank" href="https://www.linkedin.com/in/logeshg17/">
-                            <img src="images/icons8-linkedin-48.png" class="web-logo" alt="Linkedin">
+                            <img src="images/icons8-linkedin-48.png" class="web-logo" style="width: 45px;" alt="Linkedin">
                         </a>
                     </li>
                     <li class="list">
                         <a target="_blank" href="https://github.com/LogeshGunasekaran">
-                            <img src="images/icons8-github-48.png" class="web-logo" style="width: 47px;" alt="Git">
+                            <img src="images/icons8-github-48.png" class="web-logo" style="width: 44px;" alt="Git">
                         </a>
                     </li>
-                    <li class="list">
-                        <a target="_blank" href="https://www.instagram.com/mrtechon/">
-                            <img src="images/icons8-instagram-circle-48.png" class="web-logo" style="width: 47px;" alt="Git">
-                        </a>
-                    </li>
+                    
                 </ul>
             </div>
         </nav>
     </header>
     <article>
+        <button onclick="topFunction()" id="myBtn" title="Go to top">
+            <img src="images/icons8-arrow-up-100.png" alt="page-up" class="arrow-up">
+        </button>
+
         <div id="home" class="div1">
           <div class="div1-child">              
             <p class="intro-align">
@@ -60,18 +60,13 @@
                 <h1 class="abt-me" >About Me</h1>
                 <p class="content">
                     Hello! I'm Logesh, a mechanical engineering graduate with three years of enriching experience in the automobile industry as a technician. Witnessing the industry's shift towards software development sparked my interest, leading me to venture into the world of programming. Starting with core Java, I've since delved into learning Spring and Spring Boot frameworks, alongside mastering MySQL for efficient backend development. Now, I'm eagerly seeking opportunities to collaborate with dynamic teams, expand my skill set, and embark on new learning adventures in the ever-evolving realm of technology.
-                </p>
-                <div>
-                    <a href="#home" class="back-to-home">Back to Home</a>
-                </div>
+                </p>               
             </div>
         </div>
         <div id="projects" class="pjct">
             
             <div class="pjt-align ">
-                <div>
-                    <a href="#home" class="back-to-home">Back to Home</a>
-                </div>
+                
                 <div class="inline-pjct">
                     <h1 class="pjct-title">Stock Management System
                         <a target="_blank" href="https://github.com/LogeshGunasekaran/Stock-Management-System">
@@ -121,10 +116,30 @@
                             and REST API
                         </li>
                     </ol>
-                </div>
-            </div>
-            
+                </div>                
+            </div>           
         </div>
+        <script>
+            // Get the button
+            let mybutton = document.getElementById("myBtn");
+            
+            // When the user scrolls down 100px from the top of the document, show the button
+            window.onscroll = function() {scrollFunction()};
+            
+            function scrollFunction() {
+              if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+                mybutton.style.display = "block";
+              } else {
+                mybutton.style.display = "none";
+              }
+            }
+            
+            // When the user clicks on the button, scroll to the top of the document
+            function topFunction() {
+              document.body.scrollTop = 0;
+              document.documentElement.scrollTop = 0;
+            }
+            </script>        
     </article>
   
 </body>     
