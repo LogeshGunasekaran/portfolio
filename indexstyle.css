@@ -113,7 +113,7 @@ ul{
 
 .div2 .abt-align{
     border: solid transparent;
-    padding-top: 15%;
+    padding-top: 10%;
     width: 70%;
     height: 40%;
     padding-left: 15%;
@@ -125,6 +125,23 @@ ul{
     padding-top: 220px;
     width: 70%;
     padding-left: 190px;*/
+}
+
+.div2 .abt-align ul{
+    list-style-type: none;
+    background-color: rgba(219, 203, 203,0.1);
+    width: auto;
+    padding-top: 10px;
+    padding-bottom: 10px;    
+    padding-left: 0;
+    margin-left: 1%;
+    border-radius: 10px;
+}
+
+.div2 .abt-align ul li{
+    display: inline;
+    padding: 0 5px 0 5px;
+    
 }
 
 .content{
